@@ -29,3 +29,4 @@ The last option in the sub-menu has pretty much the same inputs as in the image 
 ## Footer
 The aim of this project was for pure study, I have not further intentions on using this template (Meta please don't sue me).  
 If this may help you with your school projects, feel free to copy the code, but as always, make sure you understand the code...
+If you also want to test the project without downloading it... here is a link to github pages: https://jfab00.github.io/-HighSchool-Projects-scuffed-Whatsapp/
