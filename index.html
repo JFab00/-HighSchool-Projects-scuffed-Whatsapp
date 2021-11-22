@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>WhatsApp</title>
+        <meta charset="UTF-8">
+        <link rel="shortcut icon" href="foto/Icona_Whatsapp.png"/> 
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+        <link rel='stylesheet' href='https://unpkg.com/emoji.css/dist/emoji.min.css'>                      <!---- EMOJIS ---->
+        <script src='script.js'></script>
+        <link rel="stylesheet" type="text/css" href="style.css"/>
+    </head>
+    <body>
+        <div class="container">
+            <div id="background">
+                <h3 class="x"></h3>
+                <p>Inserisci URL</p>
+                <input type="text" id="url" placeholder=" URL immagine">
+                <button id="change_bg">Aggiungi immagine</button>
+            </div>
+            <div id="profileChange">
+                <h3 class="x"></h3>
+                <p>Cambia nome</p>
+                <input type="text" id="profile_name" placeholder=" Nome da cambiare">
+                <input type="text" id="avatar_name" placeholder=" URL image da cambiare">
+                <div id="profileChange_avatars"></div>
+                <button id="change">Cambia</button>
+            </div>
+            <div id="addChat">
+                <h3 class="x"></h3>
+                <p>Inserisci Chat</p>
+                <input type="text" id="nome" placeholder=" Nome">
+                <input type="text" id="avatarurl" placeholder=" URL immagine">
+                <div id="addChat_avatars"></div>
+                <button id="add_chat">Aggiungi chat</button>
+            </div>
+            <div class="chat_list">
+                <div class="profilo_user">
+                    <img src="foto/Foto_Profilo_Fabian.jpg" id="originalImage">
+                    <h1 id="originalName">JFab</h1>
+                    <p id="puntini"></p>
+                    <div class="menu">
+                        <p>Cambia Sfondo</p>
+                        <p>Cambia profilo</p>
+                        <p>Inserisci Chat</p>
+                    </div>
+                </div>
+                <div class="notify">
+                    <h2></h2>
+                    <p>Get notified of new messages</p>
+                    <p style="font-size: 14px;">Turn on desktop notifications ></p>
+                </div>
+                <div id="searchBar">
+                    <p></p>
+                    <input type="text" id="search" placeholder=" Cerca o inizia una nuova chat">
+                </div>
+                <div class="lista">
+                    <ul id="listachat">
+
+                        <li class= "chats" id="4BInformatica" title="Chat 4B Informatica">
+                            <img src="foto/class.png" class="chat_fotoprofilo">
+                            <p><b>4B Informatica</b></p>
+                            <!--  <p id="last_msg"></p>   -->
+                            <div class="last">
+                                <p class="last_msg"></p>
+                                <p class="last_msg_time">
+                            </div>
+                        </li>
+
+                        <li class= "chats" title="Chat Conti del Delfinato">
+                            <img src="foto/Foto_CdD.png" class="chat_fotoprofilo">
+                            <p><b>Conti del Delfinato</b></p>
+                            <div class="last">
+                                <p class="last_msg"></p>
+                                <p class="last_msg_time">
+                            </div>
+                        </li>
+
+                        <li class= "chats" id="Antonio" title="Chat Antonio">
+                            <img src="foto/Foto_Profilo_Antonio.png" class="chat_fotoprofilo">
+                            <p><b>Antonio</b></p>
+                            <div class="last">
+                                <p class="last_msg"></p>
+                                <p class="last_msg_time">
+                            </div>
+                        </li>
+                        <li class= "chats" id="Martino" title="Chat Martino">
+                            <img src="foto/Foto_Profilo_Martino.png" class="chat_fotoprofilo">
+                            <p><b>Martino</b></p>
+                            <div class="last">
+                                <p class="last_msg"></p>
+                                <p class="last_msg_time">
+                            </div>
+                        </li>
+                        <li class= "chats" id="Lorenzo" title="Chat Lorenzo">
+                            <img src="foto/Foto_Profilo_Lorenzo.png" class="chat_fotoprofilo">
+                            <p><b>Lorenzo</b></p>
+                            <div class="last">
+                                <p class="last_msg"></p>
+                                <p class="last_msg_time">
+                            </div>
+                        </li>
+                        <li class= "chats" id="Giovanni" title="Chat Giovanni">
+                            <img src="foto/Foto_Profilo_Giovanni.png" class="chat_fotoprofilo">
+                            <p><b>Giovanni</b></p>
+                            <div class="last">
+                                <p class="last_msg"></p>
+                                <p class="last_msg_time">
+                            </div>
+                        </li>
+
+                        <li class= "chats" id="Andrea" title="Chat Andrea">
+                            <img src="foto/Foto_Profilo_Andrea.png" class="chat_fotoprofilo">
+                            <p><b>Andrea</b></p>
+                            <div class="last">
+                                <p class="last_msg"></p>
+                                <p class="last_msg_time">
+                            </div>
+                        </li>
+
+                        <li class= "chats" id="Francesco" title="Chat Francesco">
+                            <img src="foto/Foto_Profilo_Francesco.png" class="chat_fotoprofilo">
+                            <p><b>Francesco</b></p>
+                            <div class="last">
+                                <p class="last_msg"></p>
+                                <p class="last_msg_time">
+                            </div>
+                        </li>
+
+                        <li class= "chats" id="Alessandro" title="Chat Alessandro">
+                            <img src="foto/Foto_Profilo_Alessandro.png" class="chat_fotoprofilo">
+                            <p><b>Alessandro</b></p>
+                            <div class="last">
+                                <p class="last_msg"></p>
+                                <p class="last_msg_time">
+                            </div>
+                        </li>
+
+                        <li class= "chats" id="Federico" title="Chat Federico">
+                            <img src="foto/Foto_Profilo_Federico.png" class="chat_fotoprofilo">
+                            <p><b>Federico</b></p>
+                            <div class="last">
+                                <p class="last_msg"></p>
+                                <p class="last_msg_time">
+                            </div>
+                        </li>
+
+                        <li class= "chats" id="Riccardo" title="Chat Riccardo">
+                            <img src="foto/Foto_Profilo_Riccardo.png" class="chat_fotoprofilo">
+                            <p><b>Riccardo</b></p>
+                            <div class="last">
+                                <p class="last_msg"></p>
+                                <p class="last_msg_time">
+                            </div>
+                        </li>
+
+                        <li class= "chats" id="Pio" title="Chat Pio">
+                            <img src="foto/Foto_Profilo_Pio.png" class="chat_fotoprofilo">
+                            <p><b>Pio</b></p>
+                            <div class="last">
+                                <p class="last_msg"></p>
+                                <p class="last_msg_time">
+                            </div>
+                        </li>
+                        
+                        <div id="aggiunti">
+                            
+                        </div>
+                    </ul>
+                </div>
+            </div>
+
+            <div class= "info_profilo" id="Info_4BInformatica">
+                <img src="foto/class.png">
+                <p><b>Informatica 4° B</b></p>
+            </div>
+            <div class= "info_profilo">
+                <img src="foto/Foto_CdD.png">
+                <p><b>Conti del Delfinato</b></p>
+            </div>
+            <div class= "info_profilo" id="Info_Antonio">
+                <img src="foto/Foto_Profilo_Antonio.png">
+                <p><b> Antonio </b></p>
+            </div>
+            <div class= "info_profilo" id="Info_Martino">
+                <img src="foto/Foto_Profilo_Martino.png">
+                <p><b> Martino </b></p>
+            </div>
+            <div class= "info_profilo" id="Info_Lorenzo">
+                <img src="foto/Foto_Profilo_Lorenzo.png">
+                <p><b> Lorenzo </b></p>
+            </div>
+            <div class= "info_profilo" id="Info_Giovanni">
+                <img src="foto/Foto_Profilo_Giovanni.png">
+                <p><b> Giovanni </b></p>
+            </div>
+            <div class= "info_profilo" id="Info_Andrea">
+                <img src="foto/Foto_Profilo_Andrea.png">
+                <p><b> Andrea </b></p>
+            </div>
+            <div class= "info_profilo" id="Info_Francesco">
+                <img src="foto/Foto_Profilo_Francesco.png">
+                <p><b> Francesco </b></p>
+            </div>
+            <div class= "info_profilo" id="Info_Alessandro">
+                <img src="foto/Foto_Profilo_Alessandro.png">
+                <p><b> Alessandro </b></p>
+            </div>
+            <div class= "info_profilo" id="Info_Federico">
+                <img src="foto/Foto_Profilo_Federico.png">
+                <p><b> Federico </b></p>
+            </div>
+            <div class= "info_profilo" id="Info_Riccardo">
+                <img src="foto/Foto_Profilo_Riccardo.png">
+                <p><b> Riccardo </b></p>
+            </div>
+            <div class= "info_profilo" id="Info_Pio">
+                <img src="foto/Foto_Profilo_Pio.png">
+                <p><b> Pio </b></p>
+            </div>
+
+            <div class="chat_container">
+                <div class="chat_content" id="ajaxChats">
+
+                    <div class="chat_messages" id="chat_4BInformatica">
+                        <img src="foto/class.png">
+                        <p><b> 4B Informatica </b></p>
+                        <ul></ul>
+                    </div>
+
+                    <div class="chat_messages">
+                        <img src="foto/Foto_CdD.png">
+                        <p><b> Conti del Delfinato </b></p>
+                        <ul></ul>
+                    </div>
+                    <div class="chat_messages" id="chat_Antonio">
+                        <img src="foto/Foto_Profilo_Antonio.png">
+                        <p><b> Antonio </b></p>
+                        <ul></ul>
+                    </div>
+
+                    <div class="chat_messages" id="chat_Martino">
+                        <img src="foto/Foto_Profilo_Martino.png">
+                        <p><b> Martino </b></p>
+                        <ul></ul>
+                    </div>
+                    
+                    <div class="chat_messages" id="chat_Lorenzo">
+                        <img src="foto/Foto_Profilo_Lorenzo.png">
+                        <p><b> Lorenzo </b></p>
+                        <ul></ul>
+                    </div> 
+
+                    <div class="chat_messages" id="chat_Giovanni">
+                        <img src="foto/Foto_Profilo_Giovanni.png">
+                        <p><b> Giovanni </b></p>
+                        <ul></ul>
+                    </div>
+
+                    <div class="chat_messages" id="chat_Andrea">
+                        <img src="foto/Foto_Profilo_Andrea.png">
+                        <p><b> Andrea </b></p>
+                        <ul></ul>
+                    </div>
+
+                    <div class="chat_messages" id="chat_Francesco">
+                        <img src="foto/Foto_Profilo_Francesco.png">
+                        <p><b> Francesco </b></p>
+                        <ul></ul>
+                    </div>
+
+                    <div class="chat_messages" id="chat_Alessandro">
+                        <img src="foto/Foto_Profilo_Alessandro.png">
+                        <p><b> Alessandro </b></p>
+                        <ul></ul>
+                    </div>
+
+                    <div class="chat_messages"id="chat_Federico">
+                        <img src="foto/Foto_Profilo_Federico.png">
+                        <p><b> Federico </b></p>
+                        <ul></ul>
+                    </div>
+
+                    <div class="chat_messages" id="chat_Riccardo">
+                        <img src="foto/Foto_Profilo_Riccardo.png">
+                        <p><b> Riccardo </b></p>
+                        <ul></ul>
+                    </div>
+
+                    <div class="chat_messages" id="chat_Pio">
+                        <img src="foto/Foto_Profilo_Pio.png">
+                        <p><b> Pio </b></p>
+                        <ul></ul>
+                    </div>           
+
+                </div>
+                <div class="chat_input">
+                    <input id="messaggio" placeholder="Type a message">
+                    <button id="btnSend" class="invio"></button>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
