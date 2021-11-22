@@ -18,8 +18,14 @@ If you send a message in one of the chats it has a little preview, also when you
 ![image](https://user-images.githubusercontent.com/47055309/142872320-7fd65010-deb6-4827-84fd-aff3950f1249.png)
 ![image](https://user-images.githubusercontent.com/47055309/142872715-991d935b-f08b-450d-87c2-c16114185509.png)  
   
-If you click on the three dots it will open a sub-menu, that lets you change chat wallpapers, your avatar, and to add a chat  
+If you click on the three dots it will open a sub-menu, that lets you change chat wallpapers, your details, and to add a chat  
 ![image](https://user-images.githubusercontent.com/47055309/142873015-141e5cd4-63da-4ef9-a530-fa0b859c7691.png)  
 You need to put the wallpaper's url in order to change it...  
 ![image](https://user-images.githubusercontent.com/47055309/142873092-7cbe1d68-0c00-4139-a7dd-cde8e16f118d.png)  
+You can either get an avatar from internet and use its url, or you can choose one that is under.  
+![image](https://user-images.githubusercontent.com/47055309/142874547-1c7c7faf-302e-4f52-83ab-838791db5221.png)  
+The last option in the sub-menu has pretty much the same inputs as in the image above.  
 
+## Footer
+The aim of this project was for pure study, I have not further intentions on using this template (Meta please don't sue me).  
+If this may help you with your school projects, feel free to copy the code, but as always, make sure you understand the code...
